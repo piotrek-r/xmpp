@@ -50,7 +50,7 @@ use Fabiang\Xmpp\Exception\TimeoutException;
 class Socket extends AbstractConnection implements SocketConnectionInterface
 {
 
-    const DEFAULT_LENGTH = 4096;
+    const DEFAULT_LENGTH = 1048576;
     const STREAM_START   = <<<'XML'
 <?xml version="1.0" encoding="UTF-8"?>
 <stream:stream to="%s" xmlns:stream="http://etherx.jabber.org/streams" xmlns="jabber:client" version="1.0">
